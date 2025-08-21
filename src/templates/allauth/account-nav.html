@@ -44,18 +44,5 @@
                 <a href="{{ logout_url_ }}">{% trans "Sign Out" %}</a>
             </li>
         {% endif %}
-    {% else %}
-        {% url 'account_login' as login_url_ %}
-        {% if login_url_ %}
-            <li>
-                <a href="{{ login_url_ }}">{% trans "Sign In" %}</a>
-            </li>
-        {% endif %}
-        {% url 'account_signup' as signup_url_ %}
-        {% if signup_url_ %}
-            <li>
-                <a href="{{ signup_url_ }}">{% trans "Sign Up" %}</a>
-            </li>
-        {% endif %}
     {% endif %}
 </ul>
